@@ -1,14 +1,15 @@
-import { useFruits } from '../hooks/useFruits.ts'
+import WorldCup from './WorkdCup'
 
 function App() {
-  const { data } = useFruits()
-
   return (
     <>
-      <div className="app">
-        <h1>Pets I want to have</h1>
-        <ul>{data && data.map((pet) => <li key={pet}>{pet}</li>)}</ul>
-      </div>
+      <header className="header">
+        <h1 className="title">Pets I want to have</h1>
+        {/* <Ranking /> */}
+      </header>
+      <section className="main">
+        <WorldCup />
+      </section>
     </>
   )
 }

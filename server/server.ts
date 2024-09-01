@@ -5,6 +5,8 @@ import pets from './routes/pets'
 const server = express()
 
 server.use(express.json())
+
+// API Route
 server.use('/api/v1/pets', pets)
 
 if (process.env.NODE_ENV === 'production') {
