@@ -1,5 +1,7 @@
 import { useState } from 'react'
+// import useEffect
 
+// use useEffect to minimize image
 const images = [
   { id: 1, name: 'Cat', image: 'cat.jpg' },
   { id: 2, name: 'Dog', image: 'dog.jpg' },
